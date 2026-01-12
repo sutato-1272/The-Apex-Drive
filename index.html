@@ -5,270 +5,220 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     
     <title>The Apex Drive | Rental Mobil Mewah Jakarta & Bali</title>
-    <meta name="description" content="Sewa mobil mewah impian Anda di The Apex Drive. Koleksi premium: Lamborghini, Ferrari, Rolls-Royce, Porsche. Pengalaman berkendara tak terlupakan.">
-    <meta name="keywords" content="rental mobil mewah, sewa mobil sport, lamborghini jakarta, ferrari bali, luxury car rental, sewa rolls-royce">
-    <meta name="author" content="Ciledug Promo Agency">
-    <link rel="canonical" href="https://project-9-automotive.vercel.app/">
+    <meta name="description" content="Sewa mobil mewah impian: Lamborghini, Ferrari, Rolls-Royce. Layanan rental mobil premium terbaik di Jakarta & Bali dengan sopir atau lepas kunci.">
+    <meta name="keywords" content="sewa mobil mewah jakarta, rental mobil sport bali, sewa lamborghini, sewa ferrari jakarta, luxury car rental indonesia">
+    <link rel="canonical" href="https://the-apex-drive.vercel.app/">
 
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://project-9-automotive.vercel.app/">
-    <meta property="og:title" content="The Apex Drive | Your Ultimate Luxury Car Experience">
-    <meta property="og:description" content="Sewa mobil mewah impian Anda: Lamborghini, Ferrari, Rolls-Royce. Pengalaman berkendara terbaik.">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1599424619434-7a912e96fb72?q=80&w=1200">
-
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://project-9-automotive.vercel.app/">
-    <meta property="twitter:title" content="The Apex Drive | Luxury Car Rental">
-    <meta property="twitter:description" content="Sewa mobil mewah impian Anda: Lamborghini, Ferrari, Rolls-Royce.">
-    <meta property="twitter:image" content="https://images.unsplash.com/photo-1599424619434-7a912e96fb72?q=80&w=1200">
+    <meta property="og:url" content="https://the-apex-drive.vercel.app/">
+    <meta property="og:title" content="The Apex Drive | Luxury Car Experience">
+    <meta property="og:description" content="Koleksi mobil mewah & sport paling eksklusif di Indonesia. Cek ketersediaan unit hari ini.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1200">
 
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "RentalCarReservation",
-      "rentalCar": {
-        "@type": "Car",
-        "name": "Luxury Car Fleet - The Apex Drive",
-        "description": "Premium selection of luxury and sports cars for rental.",
-        "brand": { "@type": "Brand", "name": "Various Luxury Brands" },
-        "image": "https://images.unsplash.com/photo-1599424619434-7a912e96fb72?q=80&w=1200"
+      "@type": "CarRental",
+      "name": "The Apex Drive Luxury Rental",
+      "image": "https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1200",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Jakarta Selatan",
+        "addressRegion": "DKI Jakarta",
+        "addressCountry": "ID"
       },
-      "provider": {
-        "@type": "LocalBusiness",
-        "name": "The Apex Drive",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Jakarta",
-          "addressRegion": "DKI Jakarta",
-          "addressCountry": "ID"
-        },
-        "telephone": "+6285283212205",
-        "url": "https://project-9-automotive.vercel.app/"
-      }
+      "telephone": "+6285283212205",
+      "url": "https://the-apex-drive.vercel.app/",
+      "priceRange": "Rp 5.000.000 - Rp 50.000.000"
     }
     </script>
 
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;700&family=Inter:wght@300;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;700;800&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
 
     <style>
-        :root { --accent: #007bff; --dark: #000000; --glass: rgba(255, 255, 255, 0.05); }
-        html { scroll-behavior: smooth; }
-        body { background-color: var(--dark); font-family: 'Inter', sans-serif; color: #fff; overflow-x: hidden; }
+        :root { --accent: #0066ff; --dark: #050505; }
+        body { background-color: var(--dark); color: #fff; font-family: 'Plus Jakarta Sans', sans-serif; overflow-x: hidden; }
         .font-space { font-family: 'Space Grotesk', sans-serif; }
 
-        /* AURA BUTTON - BLUE GLOW EDITION */
-        .btn-aura-glow {
-            position: relative; padding: 16px 40px; border-radius: 4px;
-            background: #000; color: #fff; font-weight: 700; font-size: 11px;
-            letter-spacing: 2px; text-transform: uppercase; overflow: hidden;
-            border: none; cursor: pointer; transition: 0.5s; display: inline-flex;
-            align-items: center; justify-content: center;
+        /* AURA BUTTON 631BB8 MOD - CYBER BLUE */
+        .aura-btn-v3 {
+            position: relative; padding: 14px 32px; border-radius: 8px;
+            background: #000; color: #fff; font-weight: 700; font-size: 12px;
+            display: inline-flex; items-center; justify-content: center;
+            overflow: hidden; border: none; cursor: pointer; transition: 0.3s;
+            letter-spacing: 2px; text-transform: uppercase;
         }
-        .btn-aura-glow::before {
+        .aura-btn-v3::before {
             content: ""; position: absolute; inset: -150%;
-            background: conic-gradient(from 0deg, transparent 0deg, transparent 280deg, var(--accent) 320deg, #66b2ff 360deg);
+            background: conic-gradient(from 0deg, transparent 0deg, transparent 280deg, var(--accent) 320deg, #00f2fe 360deg);
             animation: rotate-aura 4s linear infinite; z-index: 0;
         }
-        .btn-aura-glow::after {
-            content: ""; position: absolute; inset: 1px;
-            background: #0a0a0a; border-radius: 3px; z-index: 1;
+        .aura-btn-v3::after {
+            content: ""; position: absolute; inset: 2px;
+            background: #050505; border-radius: 7px; z-index: 1;
         }
-        .btn-aura-glow .content { position: relative; z-index: 2; display: flex; align-items: center; gap: 10px; }
-        .btn-aura-glow:hover { transform: translateY(-3px); box-shadow: 0 10px 30px rgba(0, 123, 255, 0.2); }
+        .btn-content { position: relative; z-index: 2; display: flex; align-items: center; gap: 8px; }
+
         @keyframes rotate-aura { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
 
-        /* HORIZONTAL SCROLL CONTAINER */
-        .horizontal-scroll-container {
-            display: flex; overflow-x: scroll; scroll-snap-type: x mandatory;
-            -webkit-overflow-scrolling: touch; scrollbar-width: none; /* Hide scrollbar for Firefox */
+        /* HORIZONTAL SCROLL ENGINE */
+        .horizontal-container {
+            display: flex; overflow-x: auto; scroll-snap-type: x mandatory;
+            padding: 20px 0; scroll-behavior: smooth; gap: 24px;
         }
-        .horizontal-scroll-container::-webkit-scrollbar { display: none; /* Hide scrollbar for Chrome, Safari */ }
-        .scroll-snap-item {
-            flex: 0 0 90vw; /* Each item takes 90% of viewport width */
-            scroll-snap-align: center; margin-right: 20px;
-        }
-        @media (min-width: 768px) {
-            .scroll-snap-item { flex: 0 0 45vw; }
-            .horizontal-scroll-container { gap: 40px; }
-        }
-
-        /* CAR CARD (AURA STYLE) */
+        .horizontal-container::-webkit-scrollbar { display: none; }
+        
         .car-card {
-            background: var(--glass); border: 1px solid rgba(255, 255, 255, 0.08);
-            backdrop-filter: blur(10px); border-radius: 20px; overflow: hidden;
-            transition: 0.5s cubic-bezier(0.22, 1, 0.36, 1);
-            position: relative;
+            flex: 0 0 85vw; scroll-snap-align: center;
+            background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 32px; overflow: hidden; position: relative;
+            transition: 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
         }
-        .car-card:hover { border-color: var(--accent); transform: translateY(-8px); box-shadow: 0 15px 40px rgba(0, 123, 255, 0.1); }
-        .car-card img { transition: 1s ease-out; }
-        .car-card:hover img { transform: scale(1.05); }
+        @media (min-width: 768px) { .car-card { flex: 0 0 40vw; } }
 
-        /* STICKY BOOKING BAR */
-        .sticky-booking-bar {
-            position: fixed; bottom: 0; left: 0; width: 100%; z-index: 999;
-            background: rgba(0,0,0,0.8); backdrop-filter: blur(10px);
-            border-top: 1px solid rgba(255,255,255,0.1);
+        .car-card:hover { border-color: var(--accent); transform: translateY(-10px); }
+
+        /* MASKING TEXT */
+        .text-outline {
+            -webkit-text-stroke: 1px rgba(255,255,255,0.1);
+            color: transparent; font-size: 12vw; line-height: 0.8;
+        }
+
+        /* FLOATING CTWA */
+        .wa-float {
+            position: fixed; bottom: 30px; right: 30px; z-index: 100;
+            background: #25d366; color: white; padding: 15px 25px;
+            border-radius: 50px; font-weight: bold; display: flex; align-items: center; gap: 10px;
+            box-shadow: 0 10px 30px rgba(37, 211, 102, 0.3);
         }
     </style>
 </head>
 <body>
 
-    <header class="fixed top-0 w-full z-[100] px-8 py-6 flex justify-between items-center bg-black/50 backdrop-blur-md border-b border-white/5">
-        <div class="text-xl font-space font-bold tracking-[0.3em] italic">APEX<span class="text-blue-500">DRIVE.</span></div>
-        <nav class="hidden md:flex gap-12 text-[10px] font-bold uppercase tracking-[0.4em] text-gray-500">
-            <a href="#hero" class="hover:text-white transition">Fleet</a>
-            <a href="#why" class="hover:text-white transition">Why Us</a>
-            <a href="#contact" class="hover:text-white transition">Contact</a>
-        </nav>
-        <a href="https://wa.me/6285283212205" class="btn-aura-glow !py-3 !px-8 !text-[9px]">
-            <span class="content">Rental Enquiry</span>
-        </a>
-    </header>
+    <nav class="fixed top-0 w-full z-[1000] px-8 py-6 flex justify-between items-center backdrop-blur-md border-b border-white/5">
+        <div class="font-space font-black text-2xl tracking-tighter">APEX<span class="text-blue-600">DRIVE</span></div>
+        <div class="hidden md:flex gap-10 text-[10px] font-bold uppercase tracking-[0.3em] text-gray-500">
+            <a href="#fleet">Fleet</a>
+            <a href="#about">Experience</a>
+            <a href="#location">Location</a>
+        </div>
+        <button class="aura-btn-v3">
+            <span class="btn-content">Get Quote</span>
+        </button>
+    </nav>
 
-    <section id="hero" class="min-h-screen pt-40 pb-20 flex flex-col justify-center relative">
-        <div class="container mx-auto px-6 mb-16">
-            <span class="text-blue-500 font-bold tracking-[0.6em] text-[10px] uppercase mb-4 block">Unleash Your Drive</span>
-            <h1 class="text-5xl md:text-8xl font-space font-extrabold tracking-tighter leading-none mb-10">
-                LUXURY <br><span class="italic font-light opacity-80 text-white">REINVENTED.</span>
-            </h1>
-            <p class="text-gray-400 text-lg md:text-xl max-w-2xl">
-                Koleksi mobil mewah dan sport paling eksklusif, siap menemani perjalanan Anda di Jakarta dan Bali.
+    <main class="pt-32">
+        <section class="px-8 mb-20">
+            <div class="relative">
+                <h2 class="text-outline absolute -top-10 left-0 z-0 font-black">PREMIUM</h2>
+                <h1 class="relative z-10 text-6xl md:text-[120px] font-space font-black leading-none tracking-tighter">
+                    THE ART OF<br><span class="text-blue-600 italic">SPEED.</span>
+                </h1>
+            </div>
+            <p class="mt-8 text-gray-500 max-w-xl text-lg">
+                Pengalaman berkendara paling eksklusif di Indonesia. Sewa mobil impian Anda dengan layanan bintang lima.
             </p>
-        </div>
+        </section>
 
-        <div class="horizontal-scroll-container pl-6 md:pl-20 py-8">
-            <div class="scroll-snap-item car-card w-[90vw] md:w-[45vw] h-[450px]">
-                <img src="https://images.unsplash.com/photo-1579737976690-f6ec4a3b7509?q=80&w=1000" class="w-full h-full object-cover absolute inset-0 opacity-40">
-                <div class="relative z-10 p-8 flex flex-col justify-between h-full">
-                    <div>
-                        <span class="text-xs font-bold uppercase tracking-widest text-blue-400 mb-2 block">Available Now</span>
-                        <h3 class="text-4xl font-space font-bold mb-3">LAMBORGHINI <br>AVENTADOR</h3>
-                        <p class="text-gray-400 text-sm">Mesin V12 ganas, performa tak tertandingi.</p>
+        <section id="fleet" class="mb-32">
+            <div class="px-8 flex justify-between items-end mb-10">
+                <h3 class="text-2xl font-bold italic uppercase tracking-tighter">Featured Fleet</h3>
+                <span class="text-gray-600 text-[10px] font-bold tracking-widest uppercase">Scroll to explore →</span>
+            </div>
+
+            <div class="horizontal-container px-8">
+                <div class="car-card group">
+                    <div class="h-[300px] overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?q=80&w=1000" class="w-full h-full object-cover group-hover:scale-110 transition duration-1000">
                     </div>
-                    <div class="flex justify-between items-center border-t border-white/10 pt-6">
-                        <span class="text-2xl font-bold">Rp 25jt/day</span>
-                        <button class="btn-aura-glow !py-3 !px-6 !text-[10px]">
-                            <span class="content">BOOK →</span>
-                        </button>
+                    <div class="p-8">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h4 class="text-2xl font-black font-space">Porsche 911 Turbo</h4>
+                                <p class="text-gray-500 text-sm">German Engineering</p>
+                            </div>
+                            <span class="bg-blue-600/10 text-blue-500 px-3 py-1 rounded-full text-[10px] font-bold tracking-widest">READY</span>
+                        </div>
+                        <div class="flex justify-between items-center mt-10">
+                            <span class="text-xl font-bold">Rp 12jt<span class="text-xs text-gray-500 font-normal">/day</span></span>
+                            <button class="aura-btn-v3 !py-2 !px-6"><span class="btn-content">Book Now</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="car-card group">
+                    <div class="h-[300px] overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1525609004556-c46c7d6cf0a3?q=80&w=1000" class="w-full h-full object-cover group-hover:scale-110 transition duration-1000">
+                    </div>
+                    <div class="p-8">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h4 class="text-2xl font-black font-space">Lamborghini Aventador</h4>
+                                <p class="text-gray-500 text-sm">Italian Soul</p>
+                            </div>
+                            <span class="bg-orange-600/10 text-orange-500 px-3 py-1 rounded-full text-[10px] font-bold tracking-widest">EXCLUSIVE</span>
+                        </div>
+                        <div class="flex justify-between items-center mt-10">
+                            <span class="text-xl font-bold">Rp 35jt<span class="text-xs text-gray-500 font-normal">/day</span></span>
+                            <button class="aura-btn-v3 !py-2 !px-6"><span class="btn-content">Book Now</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="car-card group">
+                    <div class="h-[300px] overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1631214503951-3751369ede00?q=80&w=1000" class="w-full h-full object-cover group-hover:scale-110 transition duration-1000">
+                    </div>
+                    <div class="p-8">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h4 class="text-2xl font-black font-space">Rolls Royce Ghost</h4>
+                                <p class="text-gray-500 text-sm">Ultimate Luxury</p>
+                            </div>
+                            <span class="bg-blue-600/10 text-blue-500 px-3 py-1 rounded-full text-[10px] font-bold tracking-widest">CHAUFFEUR</span>
+                        </div>
+                        <div class="flex justify-between items-center mt-10">
+                            <span class="text-xl font-bold">Rp 45jt<span class="text-xs text-gray-500 font-normal">/day</span></span>
+                            <button class="aura-btn-v3 !py-2 !px-6"><span class="btn-content">Book Now</span></button>
+                        </div>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <div class="scroll-snap-item car-card w-[90vw] md:w-[45vw] h-[450px]">
-                <img src="https://images.unsplash.com/photo-1502877338535-c34c7760ae11?q=80&w=1000" class="w-full h-full object-cover absolute inset-0 opacity-40">
-                <div class="relative z-10 p-8 flex flex-col justify-between h-full">
-                    <div>
-                        <span class="text-xs font-bold uppercase tracking-widest text-blue-400 mb-2 block">Special Order</span>
-                        <h3 class="text-4xl font-space font-bold mb-3">ROLLS-ROYCE <br>CULLINAN</h3>
-                        <p class="text-gray-400 text-sm">Kemewahan tanpa kompromi, kenyamanan absolut.</p>
-                    </div>
-                    <div class="flex justify-between items-center border-t border-white/10 pt-6">
-                        <span class="text-2xl font-bold">Rp 30jt/day</span>
-                        <button class="btn-aura-glow !py-3 !px-6 !text-[10px]">
-                            <span class="content">BOOK →</span>
-                        </button>
+        <section id="location" class="py-20 px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="h-[400px] rounded-[40px] overflow-hidden border border-white/10 shadow-2xl shadow-blue-900/10">
+                    <iframe src="http://googleusercontent.com/maps.google.com/4" 
+                        width="100%" height="100%" style="border:0; filter: invert(90%) hue-rotate(180deg);" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div>
+                    <h2 class="text-4xl font-black font-space mb-6 tracking-tighter uppercase italic">Our <span class="text-blue-600">Base.</span></h2>
+                    <p class="text-gray-500 mb-10">Kunjungi showroom kami untuk melihat koleksi secara langsung atau lakukan konsultasi untuk acara spesial Anda.</p>
+                    <div class="space-y-6">
+                        <div class="flex gap-4">
+                            <span class="text-blue-600 font-bold tracking-widest text-xs uppercase">Location</span>
+                            <p class="text-sm font-bold">Apex HQ, Level 22, Jakarta Selatan.</p>
+                        </div>
+                        <div class="flex gap-4">
+                            <span class="text-blue-600 font-bold tracking-widest text-xs uppercase">Support</span>
+                            <p class="text-sm font-bold">24/7 Concierge Available</p>
+                        </div>
                     </div>
                 </div>
             </div>
+        </section>
+    </main>
 
-            <div class="scroll-snap-item car-card w-[90vw] md:w-[45vw] h-[450px]">
-                <img src="https://images.unsplash.com/photo-1552519507-da3b1a201bf1?q=80&w=1000" class="w-full h-full object-cover absolute inset-0 opacity-40">
-                <div class="relative z-10 p-8 flex flex-col justify-between h-full">
-                    <div>
-                        <span class="text-xs font-bold uppercase tracking-widest text-blue-400 mb-2 block">Weekend Deal</span>
-                        <h3 class="text-4xl font-space font-bold mb-3">PORSCHE <br>911 GT3</h3>
-                        <p class="text-gray-400 text-sm">Adrenalin murni dengan desain ikonik.</p>
-                    </div>
-                    <div class="flex justify-between items-center border-t border-white/10 pt-6">
-                        <span class="text-2xl font-bold">Rp 18jt/day</span>
-                        <button class="btn-aura-glow !py-3 !px-6 !text-[10px]">
-                            <span class="content">BOOK →</span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            </div>
-    </section>
+    <a href="https://wa.me/6285283212205" class="wa-float">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93a7.898 7.898 0 0 0-2.327-5.607zM7.994 14.52a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/></svg>
+        Chat with Expert
+    </a>
 
-    <section id="why" class="py-32 container mx-auto px-6">
-        <div class="text-center mb-20">
-            <span class="text-blue-500 font-bold tracking-[0.4em] text-[10px] uppercase mb-4 block">Why Choose Us?</span>
-            <h2 class="text-4xl md:text-6xl font-space font-bold tracking-tighter leading-none">THE APEX <br><span class="italic font-light opacity-80">DIFFERENCE.</span></h2>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="aura-card p-8 rounded-2xl flex flex-col items-center text-center">
-                <div class="w-16 h-16 bg-blue-500/10 rounded-full flex items-center justify-center text-blue-400 text-2xl mb-6">💎</div>
-                <h3 class="text-xl font-bold mb-3">Exclusive Fleet</h3>
-                <p class="text-gray-400 text-sm">Koleksi mobil sport & luxury paling langka dan terbaru.</p>
-            </div>
-            <div class="aura-card p-8 rounded-2xl flex flex-col items-center text-center">
-                <div class="w-16 h-16 bg-blue-500/10 rounded-full flex items-center justify-center text-blue-400 text-2xl mb-6">🛡️</div>
-                <h3 class="text-xl font-bold mb-3">Premium Service</h3>
-                <p class="text-gray-400 text-sm">Sopir profesional, asuransi lengkap, dan layanan 24/7.</p>
-            </div>
-            <div class="aura-card p-8 rounded-2xl flex flex-col items-center text-center">
-                <div class="w-16 h-16 bg-blue-500/10 rounded-full flex items-center justify-center text-blue-400 text-2xl mb-6">📍</div>
-                <h3 class="text-xl font-bold mb-3">Flexible Locations</h3>
-                <p class="text-gray-400 text-sm">Antar-jemput di Jakarta, Bali, atau lokasi pilihan Anda.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="py-32 container mx-auto px-6">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-            <div>
-                <span class="text-blue-500 font-bold tracking-[0.4em] text-[10px] uppercase mb-4 block">Ready to Drive?</span>
-                <h2 class="text-4xl md:text-6xl font-space font-bold tracking-tighter leading-none mb-10">GET YOUR <br><span class="italic font-light opacity-80">QUOTATION.</span></h2>
-                <p class="text-gray-400 text-lg mb-12">Hubungi tim kami untuk penawaran spesial dan ketersediaan unit. Pengalaman berkendara premium Anda dimulai di sini.</p>
-                <a href="https://wa.me/6285283212205" class="btn-aura-glow !py-4 !px-10">
-                    <span class="content">CONTACT US VIA WA →</span>
-                </a>
-            </div>
-            <div class="aura-card p-10 rounded-2xl">
-                <h3 class="text-2xl font-space font-bold mb-6">Quick Enquiry Form</h3>
-                <form class="space-y-6">
-                    <div>
-                        <label for="name" class="block text-gray-400 text-sm font-bold mb-2">Nama Lengkap</label>
-                        <input type="text" id="name" class="w-full p-4 bg-white/5 border border-white/10 rounded-md text-white focus:outline-none focus:border-blue-500" placeholder="John Doe">
-                    </div>
-                    <div>
-                        <label for="car" class="block text-gray-400 text-sm font-bold mb-2">Pilihan Mobil</label>
-                        <select id="car" class="w-full p-4 bg-white/5 border border-white/10 rounded-md text-white focus:outline-none focus:border-blue-500">
-                            <option>Lamborghini Aventador</option>
-                            <option>Rolls-Royce Cullinan</option>
-                            <option>Porsche 911 GT3</option>
-                            <option>Mercedes-Benz AMG G63</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label for="dates" class="block text-gray-400 text-sm font-bold mb-2">Tanggal Sewa</label>
-                        <input type="text" id="dates" class="w-full p-4 bg-white/5 border border-white/10 rounded-md text-white focus:outline-none focus:border-blue-500" placeholder="01/01/2025 - 03/01/2025">
-                    </div>
-                    <button type="submit" class="btn-aura-glow !py-4 !px-10 w-full">
-                        <span class="content">SUBMIT ENQUIRY</span>
-                    </button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <footer class="py-20 border-t border-white/5 text-center px-6 bg-black">
-        <div class="text-2xl font-space font-bold italic mb-6">APEX<span class="text-blue-500">DRIVE.</span></div>
-        <p class="text-[9px] font-bold text-gray-600 tracking-[0.4em] uppercase mb-12">LUXURY AUTOMOTIVE RENTAL • PROTOCOL SIAGA 1</p>
-        <div class="flex flex-wrap justify-center gap-10 text-[10px] font-bold tracking-widest text-gray-500">
-            <a href="#" class="hover:text-white transition">TERMS</a>
-            <a href="#" class="hover:text-white transition">FLEET INFO</a>
-            <a href="#" class="hover:text-white transition">CAREERS</a>
-        </div>
+    <footer class="py-20 text-center border-t border-white/5 opacity-50">
+        <p class="text-[9px] font-bold tracking-[0.5em] uppercase">SIAGA 1 Protocol • Apex Drive © 2026</p>
     </footer>
-
-    <div class="sticky-booking-bar p-4 md:hidden">
-        <a href="https://wa.me/6285283212205" class="btn-aura-glow w-full !py-3">
-            <span class="content">BOOK NOW VIA WHATSAPP</span>
-        </a>
-    </div>
 
 </body>
 </html>
